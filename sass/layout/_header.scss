@@ -1,0 +1,50 @@
+.header {
+    &_content {
+        margin-left: 20rem;
+        height: 36.9rem;
+
+        @include respond(phone) {
+            margin-left: 1.6rem;
+            margin-right: 1.6rem;
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &_title {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: $color-primary;
+
+        @include respond(phone) {
+            width: 100%;
+            display: inline-block;
+        }
+    }
+
+    &_text {
+        font-family: 'IBM Plex Mono', monospace;
+        color: $color-primary;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        width: 64rem;
+
+        @include respond(phone) {
+            display: none;
+        }
+
+        &-mobile {
+            display: none;
+            
+            @include respond(phone) {
+                display: inline;
+                font-family: 'IBM Plex Mono', monospace;
+                color: $color-primary;
+                width: 28.8rem;
+                font-size: 1.4rem;
+                line-height: 2.2rem;
+                width: 28.8rem;
+                padding: 1.6rem 1.6rem 3.6rem 1.6rem;
+            }
+        }
+    }
+}

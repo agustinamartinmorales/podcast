@@ -1,0 +1,60 @@
+.section_temas {
+margin-top: 6.4rem;
+
+    display: flex;
+    flex-direction: column;
+
+    @include respond(phone) {
+        margin-top: 4.8rem;
+    }
+
+    & h2 {
+        margin-left: 20rem;
+        margin-bottom: 6.9rem;
+
+        @include respond(phone) {
+            margin-left: 1.6rem;
+            margin-bottom: 2.4rem;
+        }
+    }
+}
+
+.bloques {
+margin: 0 20rem;
+
+    display: flex;
+    justify-content: space-around;
+
+    @include respond(phone) {
+        margin: unset;
+        margin-top: 3.7rem;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.block {
+    width: 26rem;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-content: center;
+
+    &:not(:first-child) {
+        @include respond(phone) {
+            margin-top: 4.9rem;
+        }
+    }
+
+    & img {
+        height: 10.4rem;
+        width: auto;
+    }
+
+    & h3 {
+        align-self: center;
+    }
+}

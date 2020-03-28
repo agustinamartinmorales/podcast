@@ -1,0 +1,38 @@
+.section_venimos {
+    position: relative;
+    top: -16.8rem; 
+
+    height: 72.4rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+        flex-direction: column;
+        justify-content: center;
+
+        position: relative;
+        top: -4.75rem;
+    }
+}
+
+.section_venimos-content {
+    width: 46.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    @include respond(phone) {
+        width: 28.8rem;
+    }
+}
+
+.venimos_img {
+    height: 66rem;
+    width: auto;
+
+    @include respond(phone) {
+        height: 51.9rem;
+    }
+}

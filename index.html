@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500&display=swap" rel="stylesheet">  
+
+    <script src="https://kit.fontawesome.com/72b8fd1e0f.js" crossorigin="anonymous"></script>
+    
+    <title>My website</title>
+</head>
+<body>
+    
+
+
+    <!--HEADER-->
+    <header class="header">
+
+        <!--NAVIGATION BAR-->
+            <nav class="navigation">
+
+                <img src="img/logo.svg" alt="Logo" class="navigation__logo">
+                <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+                <label for="nav-toggle" class="navigation__button"></label>
+                
+
+                <ul class="navigation_list">
+                    <li class="navigation_item"><a class="navigation_link" href="#episodios">Episodios</a></li>
+                    <li class="navigation_item"><a class="navigation_link" href="#venimos">Nosotros</a></li>
+                    <li class="navigation_item"><a class="navigation_link" href="#entrevistas">Entrevistas</a></li>
+                    <li class="navigation_item"><a class="navigation_link" href="#topicos">Topicos</a></li>
+                </ul>
+            </nav>
+
+        <!--CONTENT-->
+        <div class="header_content">
+            <div class="header_title">
+                <h1 class="title_main">Hello <span class="title_main--tachado"><s>world</s></span> pale blue dot<span class="title_main--dot">.</span></h1>
+            </div> 
+            <div class="header_text"> 
+                <p>El portal de podcasts que explora el mundo de la programacion y la tecnologia. Nuevos episodios, todos los jueves cada 15 dias.</p>
+            </div> 
+            <p class="header_text-mobile">El portal de podcasts que explora el mundo de la programacion. Nuevos episodios, todos los jueves cada 15 dias.</p>
+            <button class="btn_primary section_email-btn">Conocé más</button> 
+        </div>
+    </header>
+
+    <!--SECTION EPISODIOS-->
+    
+    <div class="section_episodios" id="episodios">
+        <h2 class="title_sub--w">Episodios</h2>
+        <div class="section_episodios-contenido">
+            <div class="podcast_container-1"><iframe class="podcast_iframe" src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="podcast_container-2"><iframe class="podcast_iframe" src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="podcast_container-3"><iframe class="podcast_iframe" src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+            <div class="podcast_container-4"><iframe class="podcast_iframe" src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+        </div>
+    </div>
+
+    <!--SECTION DE DONDE VENIMOS-->
+
+    <div class="section_venimos" id="venimos">
+        <div class="section_venimos-img"><img class="venimos_img" src="img/phone.png" alt="Phone"></div>
+        <div class="section_venimos-content">
+            <h2 class="title_sub--b">De donde venimos</h2>
+            <p class="paragraph">Our posturings, our imagined self-importance, the delusion that we have some privileged position at the Universe, are challenged by this point of pale light.<br>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+        </div>
+    </div>
+
+    <!--SECTION INVITADOS-->
+
+    <div class="section_invitados" id="entrevistas">
+        <h2 class="title_sub--b">Invitadas/os estelares</h2>
+        <div class="section_invitados--content">
+                <img class="invitados-img" src="img/grace-hopper.png" alt="Grace Hopper">
+                <img class="invitados-img" src="img/Katie-Bouman.png" alt="Katie Bouman">
+                <img class="invitados-img" src="img/Margaret_Hamilton.png" alt="Margaret Hamilton">
+                <img class="invitados-img" src="img/computer-1950s.png" alt="E.R.A.Univac">
+                <img class="invitados-img" src="img/Computer-operator.png" alt="Computer Operators">
+                <img class="invitados-img" src="img/susan-kare.png" alt="Susan Kare">
+        </div>
+    </div>
+
+    <!--SECTION TEMAS-->
+
+    <div class="section_temas" id="topicos">
+        <h2 class="title_sub--b">Algunos de nuestros temas</h2>
+        <div class="bloques">
+            <div class="block">
+                <img src="img/icon1.svg" alt="Icono 1">
+                <h3 class="title_img">Trabajo remoto</h3>
+            </div>
+            <div class="block">
+                <img src="img/icon2.svg" alt="Icono 2">
+                <h3 class="title_img">Repensando la<br>programacion</h3>
+            </div>
+            <div class="block">
+                <img src="img/icon3.svg" alt="Icono 3">
+                <h3 class="title_img">Bases del codigo</h3>
+            </div>
+            <div class="block">
+                <img src="img/icon4.svg" alt="Icono 4">
+                <h3 class="title_img">Seguridad informatica</h3>
+            </div>
+        </div>
+    </div>
+
+    <!--SECTION EMAIL-->
+    
+    <div class="section_email">
+        <div class="section_email-title"><h1 class="title_sub--w">¿Querés las últimas novedades?</h1></div>
+        <button class="btn_primary section_email-btn">Escuchá los episodios</button>
+    </div>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <p class="footer_text">&#169; 2019 - Hello blue pale dot</p>
+        <ul class="footer_icons">
+            <li class="icon_box"><a href="#"><i class="fab fa-spotify"></i></a></li>
+            <li class="icon_box"><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li class="icon_box"><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="icon_box"><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="icon_box"><a href="#"><i class="fab fa-telegram"></i></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+.section_email {
+    height: 51.8rem;
+    margin-top: 3.4rem;
+    background-image: linear-gradient(
+        225deg,
+        $color-primary-light, 
+        $color-primary-dark);
+    background-size: cover;
+
+    /* Clip path = Mascara de
+    Each value its a corner
+    1st left and top
+    2nd rigth and top
+    3rd right and bottom
+    polygon (x y, x y, x y, x y)*/
+    /*Using the vh as a unit when we change de viewport size it will adapt*/
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0% 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(phone) {
+        height: 34.1rem;
+        clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    &-title {
+        @include respond(phone) {
+            width: 28.8rem;
+            text-align: center;
+        }  
+    }
+
+    &-btn {
+        @include respond(phone) {
+            width: 28.8rem;
+            text-align: center;
+        }  
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.6rem 10rem 3.1rem 10rem;
+    align-content: center;
+
+    @include respond(phone) {
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 2.4rem 4.6rem 3.1rem 4.7rem;
+    }  
+
+    &_text {
+        font-family: 'IBM Plex Mono', monospace;
+        font-weight: 500;
+        color: $color-primary;
+        font-size: 1.6rem;
+
+        @include respond(phone) {
+           font-size: 1.4rem;
+           line-height: 2.2rem;
+           margin-bottom: 1.6rem;
+        }  
+    }
+
+    &_icons {
+        width: 30%;
+        display: flex;
+        justify-content: space-around;
+
+        @include respond(phone) {
+            justify-content: space-between;
+            width: 100%
+        }  
+    }
+}
+
+.icon_box {
+    height: 2.8rem;
+    width: 1.8rem;
+
+    &, a {
+        font-size: 1.8rem;
+        list-style: none;
+        text-decoration: none;
+
+        @include respond(phone) {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            color: $color-primary;
+        }  
+    }
+}

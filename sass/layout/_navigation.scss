@@ -1,0 +1,123 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    height: 8rem;
+
+    @include respond(phone) {
+        height: 44px;
+    }
+
+    &__logo {
+        margin-left: 7.8rem;
+        margin-top: 2.2rem;
+        height: 3.6rem;
+
+        @include respond(phone) {
+            margin-left: 16px;
+            margin-top: 10px;
+            height: 24px;
+        }
+    }
+
+    //NORMAL SET UP
+    &_list {
+        display: flex;
+        align-items: center;
+        margin-right: 10rem;
+
+        @include respond(phone) {
+            width: 100%;
+            margin-right: 0;
+            margin-top: 10px;
+            display: none;
+        }
+    }
+    
+    &_item {
+        list-style: none;
+        &:not(:last-child) {
+            margin-right: 4.8rem;
+        }
+
+        @include respond(phone) {
+            padding: 15px 200px 15px 16px;
+        }
+    }
+
+    &_link {
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 1.6rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-primary;
+        line-height: 2.4rem;
+
+        &:hover {
+            color: $color-secondary;
+            text-decoration: line-through;
+        }
+
+        &:active {
+            color: $color-grey;
+            text-decoration: line-through;
+            opacity: 56%;
+        }
+
+        @include respond(phone) {
+            color: $color-white;
+        }
+    }
+
+    //FUNCTIONALITY
+
+    &__button {
+        margin: 0 4rem 0 0;
+        font-size: 2.4rem;
+        display: none;
+
+        @include respond(phone) {
+            display: block;
+            cursor: pointer;
+            text-align: right;
+            margin-right: 21px;
+            margin-top: 6px;
+            width: 18px;
+            float: right;
+        }
+
+        &::before {
+            @include respond(phone) {
+                content: "☰";
+            }
+        }
+
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__checkbox:checked~&__button::before {
+        display: block;
+        content: "X";
+        font-family: sans-serif;
+        font-size: 25px;
+    }
+
+    
+    &__checkbox:checked~&_list {
+        display: block;
+        background-color: $color-primary-medium;
+
+        height: 224px;
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    &__checkbox:checked~&_link {
+        display: block;
+    }
+}
+

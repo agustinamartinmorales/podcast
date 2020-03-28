@@ -1,0 +1,33 @@
+.section_invitados {
+    margin-top: -16.8rem;
+    display: flex;
+    flex-direction: column;
+
+    @include respond(phone) {
+        margin-top: 5.4rem;
+    }
+
+    &--content {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-grow: 1;
+    }
+
+    & h2 {
+        margin-left: 1.6rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+.invitados-img {
+        width: 33%;
+        display: inline-block;
+
+        flex-shrink: 1;
+
+        @include respond(phone) {
+            width: 100%;
+        }
+}
