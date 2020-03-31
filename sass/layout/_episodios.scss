@@ -46,6 +46,12 @@
     & h2 {
         grid-row: 1/2;
         grid-column: 1/2;
+
+        -webkit-grid-row: 1/2;
+        -webkit-grid-column: 1/2;
+
+        -moz-grid-row: 1/2;
+        -moz-grid-column: 1/2;
     }
 
     &-contenido {

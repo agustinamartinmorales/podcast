@@ -163,7 +163,11 @@ body {
       clip-path: polygon(0 4%, 100% 0, 100% 96%, 0% 100%); } }
   .section_episodios h2 {
     grid-row: 1/2;
-    grid-column: 1/2; }
+    grid-column: 1/2;
+    -webkit-grid-row: 1/2;
+    -webkit-grid-column: 1/2;
+    -moz-grid-row: 1/2;
+    -moz-grid-column: 1/2; }
   .section_episodios-contenido {
     /*padding: 274px 80px 232px 80px;*/
     grid-row: 2/3;
